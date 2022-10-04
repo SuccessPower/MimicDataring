@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimicDataring", "MimicDataring\MimicDataring.csproj", "{4ED4051F-A5E5-4F7F-8D41-FC613737313A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ED4051F-A5E5-4F7F-8D41-FC613737313A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED4051F-A5E5-4F7F-8D41-FC613737313A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED4051F-A5E5-4F7F-8D41-FC613737313A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED4051F-A5E5-4F7F-8D41-FC613737313A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {371D1CF3-DC02-496C-884D-39C6C13FE14D}
+	EndGlobalSection
+EndGlobal

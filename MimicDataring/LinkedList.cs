@@ -1,30 +1,28 @@
-﻿using MimicDataring;
-
-namespace MimicDataring
+﻿namespace MimicDataring
 {
     public class LinkedList<T>
     {
-        
+
         Node<T> head;
         Node<T> tail;
         int Count = 0;
+        int index = 0;
 
-        
         public void Add(T item)
         {
             Node<T> node = new Node<T>(item);
             node.next = null;
 
-            if(head == null)
+            if (head == null)
             {
-                head = node;    
+                head = node;
             }
             else
             {
                 Node<T> temp = new Node<T>(item);
                 temp = head;
 
-                while(temp != null)
+                while (temp != null)
                 {
                     temp = temp.next;
                 }
@@ -38,16 +36,16 @@ namespace MimicDataring
             if (head == null)
                 return;
 
-            if(head.data.Equals(item))
+            if (head.data.Equals(item))
             {
                 head = head.next;
                 Count--;
                 return;
-                
+
             }
 
             var temp = head;
-            while(temp.next != null)
+            while (temp.next != null)
             {
                 if (temp.next.data.Equals(item))
                 {
@@ -60,6 +58,46 @@ namespace MimicDataring
 
         }
 
-             
+        public bool Check(T item)
+        {
+            Node<T> temp = head;
+            while (head != null)
+            {
+                if (temp.data.Equals(item))
+                {
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+
+        }
+
+        public int Index(T item)
+        {
+            Node<T> temp = head;
+            while (head != null)
+            {
+                if (temp.data.Equals(item))
+                {
+                    return index;
+                    temp = temp.next;
+                    index++;
+                }             
+            }
+            return index;
+        }
+
+        //public Node<T> Print(T value)
+        //{
+        //    while(value == null)
+        //    {
+        //        foreach (T individualVal in value)
+        //        {
+        //            Console.WriteLine(individualVal);
+        //        }
+        //    }
+        //}
+
     }
 }

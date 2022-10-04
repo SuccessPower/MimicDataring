@@ -33,6 +33,33 @@ namespace MimicDataring
             Count++;
         }
 
+        public void Remove(T item)
+        {
+            if (head == null)
+                return;
+
+            if(head.data.Equals(item))
+            {
+                head = head.next;
+                Count--;
+                return;
+                
+            }
+
+            var temp = head;
+            while(temp.next != null)
+            {
+                if (temp.next.data.Equals(item))
+                {
+                    temp.next = temp.next.next;
+                    Count--;
+                    return;
+                }
+                temp = temp.next;
+            }
+
+        }
+
              
     }
 }

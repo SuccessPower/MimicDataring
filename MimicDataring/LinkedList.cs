@@ -90,12 +90,11 @@
 
         //public Node<T> Print(T value)
         //{
-        //    while(value == null)
+        //    while (Node.next != null)
         //    {
-        //        foreach (T individualVal in value)
-        //        {
-        //            Console.WriteLine(individualVal);
-        //        }
+        //        Console.WriteLine(Node.data);
+        //        Node = Node.next;
+
         //    }
         //}
 
